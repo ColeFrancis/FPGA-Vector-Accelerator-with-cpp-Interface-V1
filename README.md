@@ -33,15 +33,15 @@ Send instructions and data as bits using the interface defined in the software h
 ## ISA
 
 | Instruction | binary (d: dont care, x: see alu op) |
-| :-- | --: |
+| :-- | :-- |
 | Nop  | 0000000000000000 |
 | Save scal to each element of vec A (len, #) | 000000000010aaaa |
-| Save vec to vec A (len, #)                  | 000000000001aaaa |
+| Save vec to vec A                           | 000000000001aaaa (len, #) |
 | Return vec B                                | 0001bbbb1ddddddd |
 | Move vec B to vec A                         | 0010bbbb1dddaaaa |
-| Vec - Vec immediate ALU (len, #)            | 1110dddd1xxxaaaa |
-| Vec - vec ALU (reg)                         | 1010bbbb1xxxaaaa |
-| Vec - scal immediate (#)                    | 1111dddd1xxxaaaa |
+| Vec - Vec immediate ALU                     | 1110dddd1xxxaaaa (len, #) |
+| Vec - vec ALU                               | 1010bbbb1xxxaaaa |
+| Vec - scal immediate                        | 1111dddd1xxxaaaa (#) |
 | Vec - scal with scalar acc                  | 1011dddd1xxxaaaa |
 | Vec red and return                          | 1001dddd1dxxaaaa |
 | Vec red and acc                             | 1000dddd1dxxaaaa |
