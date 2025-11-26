@@ -19,7 +19,11 @@ CISC-Style
 
 ## Requirements
 
+Windows operating system for interface. The Linux-version of the interface is not implemented.
+
 ## Compilation
+
+Include the headerfile in your software and compile as normal. For the hardware, Use the .sv files to create a project in your software of choice and syntehsize. Vivado 2022.1 was used for this project.
 
 ## Dependencies
 There are no dependencies.
