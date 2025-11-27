@@ -70,7 +70,7 @@ While the UART interface limits bandwidth, the hardware core is intentionally mo
 
 Communication occurs over a UART serial link:
 
-- Host to FPGA: instructions, immediate operands, and vector data
+- Host to FPGA: instructions(little endian), immediate operands (after instruction)
 
 - FPGA to Host: return instructions (vector data or scalars)
 
